@@ -1,0 +1,29 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "play1_build",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "src/eigen/play1.cpp",
+                "-o",
+                "build/eigen/play1"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "play1_run",
+            "type": "shell",
+            "command": "./build/eigen/play1",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "dependsOn": "play1_build"
+        }
+    ]
+}
