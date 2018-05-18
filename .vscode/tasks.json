@@ -4,26 +4,28 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "play1_build",
+            "label": "cmake_build_all",
             "type": "shell",
-            "command": "g++",
-            "args": [
-                "src/eigen/play1.cpp",
-                "-o",
-                "build/eigen/play1"
-            ],
+            "command": "mkdir -p ${workspaceFolder}/build && cd ${workspaceFolder}/build && cmake .. && make all"
+        },
+        {
+            "label": "run_play",
+            "type": "shell",
+            "command": "${workspaceFolder}/build/eigen/play",
+            "dependsOn": "cmake_build_all",
+            "group": "build",
             "problemMatcher": []
         },
         {
-            "label": "play1_run",
+            "label": "run_hello_slambook",
             "type": "shell",
-            "command": "./build/eigen/play1",
-            "problemMatcher": [],
+            "command": "${workspaceFolder}/build/slambook/ch2/useHello",
+            "dependsOn": "cmake_build_all",
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
-            "dependsOn": "play1_build"
+            "problemMatcher": []
         }
     ]
 }
