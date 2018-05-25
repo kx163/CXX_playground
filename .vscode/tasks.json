@@ -17,9 +17,9 @@
             "problemMatcher": []
         },
         {
-            "label": "run_hello_slambook",
+            "label": "run_eigen_matrix",
             "type": "shell",
-            "command": "${workspaceFolder}/build/slambook/ch2/useHello",
+            "command": "${workspaceFolder}/build/slambook/ch3/useGeometry",
             "dependsOn": "cmake_build_all",
             "group": {
                 "kind": "build",
