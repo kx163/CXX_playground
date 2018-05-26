@@ -19,7 +19,7 @@
         {
             "label": "run_eigen_matrix",
             "type": "shell",
-            "command": "${workspaceFolder}/build/slambook/ch3/useGeometry",
+            "command": "${workspaceFolder}/build/slambook/ch4/useSophus",
             "dependsOn": "cmake_build_all",
             "group": {
                 "kind": "build",
