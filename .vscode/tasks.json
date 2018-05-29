@@ -19,7 +19,7 @@
         {
             "label": "run_eigen_matrix",
             "type": "shell",
-            "command": "${workspaceFolder}/build/slambook/ch5/joinMap ${workspaceFolder}/data/slambook/ch5 && pcl_viewer ${workspaceFolder}/data/slambook/ch5/map.pcd",
+            "command": "${workspaceFolder}/build/slambook/ch6/ceres_curve_fitting",
             "dependsOn": "cmake_build_all",
             "group": {
                 "kind": "build",
