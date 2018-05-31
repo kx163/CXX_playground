@@ -17,3 +17,9 @@ target_link_libraries(ceres_curve_fitting ${OpenCV_LIBRARIES} ${CERES_LIBRARIES}
 
 add_executable(g2o_curve_fitting g2o_curve_fitting.cpp)
 target_link_libraries(g2o_curve_fitting ${OpenCV_LIBRARIES} g2o_core g2o_stuff)
+
+add_executable(ceres_exercice ceres_exercice.cpp)
+target_link_libraries(ceres_exercice ${CERES_LIBRARIES})
+
+add_executable(g2o_exercice g2o_exercice.cpp)
+target_link_libraries(g2o_exercice g2o_core g2o_stuff)
