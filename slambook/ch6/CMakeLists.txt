@@ -23,3 +23,6 @@ target_link_libraries(ceres_exercice ${CERES_LIBRARIES})
 
 add_executable(g2o_exercice g2o_exercice.cpp)
 target_link_libraries(g2o_exercice g2o_core g2o_stuff)
+
+add_executable(ceres_dk ceres_dk.cpp)
+target_link_libraries(ceres_dk ${CERES_LIBRARIES})

@@ -19,7 +19,7 @@
         {
             "label": "run_eigen_matrix",
             "type": "shell",
-            "command": "${workspaceFolder}/build/slambook/ch6/g2o_exercice",
+            "command": "${workspaceFolder}/build/slambook/ch6/ceres_dk ${workspaceFolder}/data/slambook/ch6/runs.csv",
             "dependsOn": "cmake_build_all",
             "group": {
                 "kind": "build",
